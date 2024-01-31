@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: transparent; /* Make navigation bar transparent */
+  padding: 10px;
+  box-shadow: none; /* Remove the box shadow */
+}
+
+nav a {
+  display: inline-block; /* Display links horizontally */
+  text-decoration: none;
+  color: #fff; /* Text Color */
+  margin-right: 15px; /* Adjust spacing between links */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.main-content {
+  height: 100vh; /* Set height to 100% of viewport height */
+  background-image: url("background.jpg"); /* Set background image */
+  background-size: cover; /* Cover the full height and width */
+  background-position: top; /* Align the background image to the top */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  font-size: 3em; /* Adjust the font size */
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5em; /* Adjust the font size */
+}
+
+/* Add style for the dropdown button and content */
+.dropbtn {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent; /* Make dropdown background transparent */
+  min-width: 160px;
+  box-shadow: none; /* Remove the box shadow */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Add style to show the dropdown content */
+.show {
+  display: block;
+}
+
+/* Add style for the dropdown button and content */
+.dropbtn {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  border: none; /* Remove border */
+}
+
+.dropbtn:hover {
+  color: white; /* Change text color on hover */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent; /* Make dropdown background transparent */
+  min-width: 160px;
+  box-shadow: none; /* Remove the box shadow */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white; /* Set text color to white */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change text color in the dropdown on hover */
+.dropdown-content a:hover {
+  color: white;
+}
+
+/* Add style to show the dropdown content */
+.show {
+  display: block;
+}
+
+/* Add the same style for the line below the button */
+.dropbtn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff; /* underline color of dropdown button */
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.dropbtn:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.dropbtn:focus::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.about-section {
+  height: 100vh;
+  margin-top: 20vh; /* Adjust the margin-top value to position the text higher */
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-section h2 {
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2em;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #000; /* Set the text color for the button */
+  background-color: #fff; /* Set the background color for the button to white */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #eee; /* Change background color on hover */
+}
